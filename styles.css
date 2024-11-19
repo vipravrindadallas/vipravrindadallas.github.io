@@ -73,6 +73,10 @@ body {
     font-weight: bold;
 }
 
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
 /* Hero Section */
 .hero-section {
     text-align: center;
@@ -528,4 +532,110 @@ footer p {
     margin: 0;
     font-size: 16px;
     color: #555;
+}
+
+/* Events & News Section */
+.events-news {
+    padding: 40px 20px;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+.events-news .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.events-news h2 {
+    font-size: 32px;
+    color: #ff6600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.events-news .intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.event-category {
+    margin-top: 40px;
+}
+
+.event-category h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff6600;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.event-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.event-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-info {
+    padding: 20px;
+}
+
+.event-info h4 {
+    font-size: 20px;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.event-info p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.event-date {
+    font-style: italic;
+    font-size: 14px;
+    color: #888;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e65c00;
 }
