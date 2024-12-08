@@ -49,20 +49,12 @@ body {
     color: #555;
 }
 
-.hamburger {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 28px;
-    cursor: pointer;
-    color: #333;
-}
-
 .navbar {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    transition: transform 0.3s ease-in-out;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
 }
 
 .navbar a {
@@ -79,44 +71,12 @@ body {
     color: #fff;
 }
 
-/* Hamburger Menu Visibility on Mobile */
-@media (max-width: 768px) {
-    /* Align Header Elements */
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-    .hamburger {
-        display: block;
-    }
-
-    .navbar {
-        display: none;
-        flex-direction: column;
-        background-color: #f8f9fa;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-
-    .navbar.show {
-        display: flex;
-    }
-
-    .navbar a {
-        padding: 15px;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .navbar a:last-child {
-        border-bottom: none;
-    }
+.navbar .donate-button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 /* Smooth Scrolling */
