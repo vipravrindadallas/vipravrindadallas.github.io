@@ -270,28 +270,5 @@
 
 
 </body>
-<script>document
-    .getElementById("contact-form")
-    .addEventListener("submit", function (event) {
-      event.preventDefault();
-  
-      var name = document.getElementById("name").value;
-      var message = document.getElementById("message").value;
-  
-      var mailtoLink =
-        "mailto:vipravrindadallas@gmail.com" +
-        "?subject=" +
-        encodeURIComponent("Contact from " + name) +
-        "&body=" +
-        encodeURIComponent("Name: " + name + "\n\nMessage:\n" + message);
-  
-      window.location.href = mailtoLink;
-  
-      // Optional: Clear the form after submission
-      this.reset();
-  
-      // Optional: Show a confirmation message
-      alert("Thank you for your message! I will get back to you soon.");
-    });
-  </script>
+
 </html>
