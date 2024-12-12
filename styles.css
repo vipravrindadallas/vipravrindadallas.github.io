@@ -628,20 +628,7 @@ footer p {
     color: #888;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 8px 15px;
-    background-color: #ff6600;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
 
-.cta-button:hover {
-    background-color: #e65c00;
-}
 /* Contact Section */
 .contact-section {
     padding: 40px 20px;
@@ -716,21 +703,4 @@ footer p {
 .contact-form textarea:focus {
     border-color: #ff6600;
     outline: none;
-}
-
-.contact-form button {
-    width: 100%;
-    padding: 10px 20px;
-    background-color: #ff6600;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact-form button:hover {
-    background-color: #e65c00;
 }
