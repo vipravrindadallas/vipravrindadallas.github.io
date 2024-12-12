@@ -282,7 +282,8 @@
         "mailto:vipravrindadallas@gmail.com" +
         "?subject=" +
         encodeURIComponent("Contact from " + name) +
-        "&body="
+        "&body=" +
+        encodeURIComponent("Name: " + name + "\n\nMessage:\n" + message);
   
       window.location.href = mailtoLink;
   
