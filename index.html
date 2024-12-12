@@ -195,7 +195,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="contact-section">
+        <section id="contact-form" class="contact-section">
             <div class="container">
                 <h2>Contact Us</h2>
         
@@ -227,12 +227,9 @@
         <div class="footer-content">
             <div class="footer-logo">
                 <h2>VipraVrinda</h2>
-                <!--<address>
-                    addr<br>
-                    Allen, Texas, 75013<br>
-                    Email: email<br>
-                    Phone: phone
-                </address>-->
+                <address>
+                    vipravrindadallas@gmail.com
+                </address>
             </div>
             <div class="footer-column">
                 <h3>Who We Are</h3>
@@ -273,5 +270,27 @@
 
 
 </body>
-
+<script>document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+  
+      var name = document.getElementById("name").value;
+      var message = document.getElementById("message").value;
+  
+      var mailtoLink =
+        "mailto:vipravrindadallas@gmail.com" +
+        "?subject=" +
+        encodeURIComponent("Contact from " + name) +
+        "&body="
+  
+      window.location.href = mailtoLink;
+  
+      // Optional: Clear the form after submission
+      this.reset();
+  
+      // Optional: Show a confirmation message
+      alert("Thank you for your message! I will get back to you soon.");
+    });
+  </script>
 </html>
