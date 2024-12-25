@@ -49,6 +49,41 @@ body {
     color: #555;
 }
 
+/* Default styles */
+.navbar {
+    display: flex;
+    gap: 1rem;
+    transition: max-height 0.3s ease;
+}
+.menu-toggle{
+    visibility: hidden;
+}
+/* Hidden menu styles for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .navbar.active {
+        max-height: 500px; /* Adjust based on the content */
+    }
+
+    .menu-toggle {
+        visibility: visible;
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .menu-toggle i {
+        color: #000; /* Adjust icon color */
+    }
+}
+
 .navbar {
     display: flex;
     justify-content: center;
