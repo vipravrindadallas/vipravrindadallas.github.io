@@ -32,6 +32,11 @@ body {
     width: 120px; /* Adjust the size as needed */
     height: auto;
 }
+.logo-image2 {
+    width: 120px; /* Adjust the size as needed */
+    height: auto;
+    visibility: visible;
+}
 
 .header .logo-text {
     text-align: center;
@@ -57,9 +62,14 @@ body {
 }
 .menu-toggle{
     visibility: hidden;
+    width: 0px;
 }
 /* Hidden menu styles for smaller screens */
 @media (max-width: 768px) {
+    .logo-image2{
+        visibility: hidden;
+        width: 0px;
+    }
     .navbar {
         flex-direction: column;
         max-height: 0;
@@ -71,6 +81,7 @@ body {
     }
 
     .menu-toggle {
+        width: auto;
         visibility: visible;
         display: block;
         background: none;
@@ -128,7 +139,7 @@ html {
 
 .hero-section img {
     width: 100%;
-    max-width: 630px;
+    max-width: 800px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -347,63 +358,6 @@ footer p {
     margin-bottom: 10px;
 }
 
-.history {
-    margin-bottom: 30px;
-}
-
-.history h3 {
-    font-size: 24px;
-    color: #ff6600;
-    margin-bottom: 10px;
-}
-
-.history p {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #555;
-}
-
-.team {
-    text-align: center;
-}
-
-.team h3 {
-    font-size: 24px;
-    color: #ff6600;
-    margin-bottom: 20px;
-}
-
-.team-members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.team-member {
-    text-align: center;
-    max-width: 200px;
-}
-
-.team-member img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 2px solid #ff6600;
-    margin-bottom: 10px;
-}
-
-.team-member h4 {
-    font-size: 18px;
-    color: #333;
-}
-
-.team-member p {
-    font-size: 14px;
-    color: #555;
-}
-
-
 /* Goals Section */
 .goals {
     margin: 40px 0;
@@ -469,107 +423,6 @@ footer p {
     color: #ff6600;
     margin-bottom: 20px;
     text-transform: uppercase;
-}
-
-.charter-section .intro {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #555;
-    line-height: 1.8;
-}
-
-.charter-mission, .charter-objectives, .charter-values {
-    margin-bottom: 30px;
-}
-
-.charter-objectives ul {
-    list-style-type: disc;
-    padding-left: 40px;
-    text-align: left;
-}
-
-.charter-objectives li {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.charter-mission h3, .charter-objectives h3, .charter-values h3 {
-    font-size: 24px;
-    color: #ff6600;
-    margin-bottom: 10px;
-}
-
-.membership-info {
-    margin-bottom: 30px;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    text-align: left;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.membership-info h3 {
-    font-size: 24px;
-    color: #ff6600;
-    margin-bottom: 10px;
-}
-
-.membership-info p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.membership-info ul {
-    list-style-type: disc;
-    padding-left: 40px;
-}
-
-.membership-info li {
-    margin-bottom: 10px;
-    color: #555;
-}
-
-.card {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.card h3 {
-    font-size: 24px;
-    color: #ff6600;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.card h3 i {
-    margin-right: 10px;
-    color: #ff6600;
-}
-
-.objective-item, .membership-detail {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 15px;
-}
-
-.objective-item i, .membership-detail i {
-    font-size: 20px;
-    margin-right: 10px;
-    color: #ff6600;
-}
-
-.objective-item p, .membership-detail p {
-    margin: 0;
-    font-size: 16px;
-    color: #555;
 }
 
 /* Events & News Section */
