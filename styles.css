@@ -1,3 +1,4 @@
+
 /* General Reset */
 * {
     margin: 0;
@@ -32,11 +33,6 @@ body {
     width: 120px; /* Adjust the size as needed */
     height: auto;
 }
-.logo-image2 {
-    width: 120px; /* Adjust the size as needed */
-    height: auto;
-    visibility: visible;
-}
 
 .header .logo-text {
     text-align: center;
@@ -62,14 +58,9 @@ body {
 }
 .menu-toggle{
     visibility: hidden;
-    width: 0px;
 }
 /* Hidden menu styles for smaller screens */
 @media (max-width: 768px) {
-    .logo-image2{
-        visibility: hidden;
-        width: 0px;
-    }
     .navbar {
         flex-direction: column;
         max-height: 0;
@@ -81,7 +72,6 @@ body {
     }
 
     .menu-toggle {
-        width: auto;
         visibility: visible;
         display: block;
         background: none;
@@ -358,7 +348,6 @@ footer p {
     margin-bottom: 10px;
 }
 
-/* Goals Section */
 .goals {
     margin: 40px 0;
     text-align: center;
