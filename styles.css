@@ -1,4 +1,3 @@
-
 /* General Reset */
 * {
     margin: 0;
@@ -26,11 +25,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px; /* Space between the image and text */
+    gap: 15px;
+    /* Space between the image and text */
 }
 
 .header .logo-image {
-    width: 120px; /* Adjust the size as needed */
+    width: 120px;
+    /* Adjust the size as needed */
     height: auto;
 }
 
@@ -39,7 +40,8 @@ body {
 }
 
 .header .logo-text h1 {
-    font-size: 24px; /* Adjust for desired font size */
+    font-size: 24px;
+    /* Adjust for desired font size */
     margin: 0;
     color: #ff6600;
 }
@@ -56,9 +58,11 @@ body {
     gap: 1rem;
     transition: max-height 0.3s ease;
 }
-.menu-toggle{
+
+.menu-toggle {
     visibility: hidden;
 }
+
 /* Hidden menu styles for smaller screens */
 @media (max-width: 768px) {
     .navbar {
@@ -68,7 +72,8 @@ body {
     }
 
     .navbar.active {
-        max-height: 500px; /* Adjust based on the content */
+        max-height: 500px;
+        /* Adjust based on the content */
     }
 
     .menu-toggle {
@@ -81,7 +86,8 @@ body {
     }
 
     .menu-toggle i {
-        color: #000; /* Adjust icon color */
+        color: #000;
+        /* Adjust icon color */
     }
 }
 
@@ -119,6 +125,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
 /* Hero Section */
 .hero-section {
     text-align: center;
@@ -581,6 +588,7 @@ footer p {
     border-color: #ff6600;
     outline: none;
 }
+
 /* Modal Styles */
 .modal {
     display: none;

@@ -1,7 +1,6 @@
 import os
 import json
 
-# Define the base directory for events
 BASE_DIR = 'imgs/events'
 OUTPUT_FILE = 'event-images.json'
 IMAGE_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.gif')
@@ -25,7 +24,6 @@ def generate_event_images_json():
             if images:
                 event_images[event] = images
 
-    # Write to JSON file
     with open(OUTPUT_FILE, 'w') as json_file:
         json.dump(event_images, json_file, indent=4)
     
