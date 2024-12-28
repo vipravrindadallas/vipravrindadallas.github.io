@@ -140,7 +140,7 @@
                                     Group idea was conseived by many people in the DFW area.
                                 </p>
                                 <p class="event-date">Date: July 21, 2024</p>
-                                <a href="#" class="cta-button" id="event3">View Highlights</a>
+                                <a href="#" class="cta-button" id="event1">View Highlights</a>
                             </div>
                         </div>
                         <div class="event-card">
@@ -151,7 +151,18 @@
                                     This is a fun filled get together of our group @ Bob Woodruff Park plano.
                                 </p>
                                 <p class="event-date">Date: November 16, 2024</p>
-                                <a href="#" class="cta-button" id="event4">Learn More</a>
+                                <a href="#" class="cta-button" id="event2">View Highlights</a>
+                            </div>
+                        </div>
+                        <div class="event-card">
+                            <img src="imgs/events/DSC_7843_VV.jpg" alt="Event Image" class="event-image">
+                            <div class="event-info">
+                                <h4>Get Together</h4>
+                                <p>
+                                    This is a fun filled get together of VipraVrinda members.
+                                </p>
+                                <p class="event-date">Date: December 8, 2024</p>
+                                <a href="#" class="cta-button" id="event3">View Highlights</a>
                             </div>
                         </div>
                     </div>
@@ -232,6 +243,152 @@
         <p>&copy; VipraVrinda Association 2024-2025. All rights reserved.</p>
         <p>by <a href="https://abhiramasonny.github.io" style="text-decoration: underline; color: inherit;">Abhirama Sonny</a></p>
     </footer>
+<!-- Modal for Image Gallery -->
+<div id="imageModal" class="modal">
+    <button id="closeModal" class="close-button" aria-label="Close Modal">
+        <i class="fa-solid fa-times"></i>
+    </button>
+    <div class="modal-content">
+        <img id="modalImage" src="" alt="Event Image">
+        <div class="modal-navigation">
+            <button id="prevImage" class="nav-button">&lt;</button>
+            <button id="nextImage" class="nav-button">&gt;</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    const closeModal = document.getElementById("closeModal");
+    const prevImage = document.getElementById("prevImage");
+    const nextImage = document.getElementById("nextImage");
+
+    // Define unique image sets for each button
+    const imageSets = {
+        event1: [
+        "imgs/events/event1/DSC_3129.JPG",
+        "imgs/events/event1/DSC_3114.JPG",
+        "imgs/events/event1/DSC_3116.JPG",
+        "imgs/events/event1/DSC_3113.JPG",
+        "imgs/events/event1/DSC_3112.JPG",
+        "imgs/events/event1/DSC_3138.JPG",
+        "imgs/events/event1/DSC_3139.JPG",
+        "imgs/events/event1/DSC_3111.JPG",
+        "imgs/events/event1/DSC_3149.JPG",
+        "imgs/events/event1/DSC_3160.JPG",
+        "imgs/events/event1/DSC_3148.JPG",
+        "imgs/events/event1/DSC_3157.JPG",
+        "imgs/events/event1/DSC_3142.JPG",
+        "imgs/events/event1/DSC_3156.JPG",
+        "imgs/events/event1/DSC_3155.JPG",
+        "imgs/events/event1/DSC_3141.JPG",
+        "imgs/events/event1/DSC_3145.JPG",
+        "imgs/events/event1/DSC_3151.JPG",
+        "imgs/events/event1/DSC_3147.JPG",
+        "imgs/events/event1/DSC_3153.JPG",
+        "imgs/events/event1/DSC_3121.JPG",
+        "imgs/events/event1/DSC_3109.JPG",
+        "imgs/events/event1/DSC_3123.JPG",
+        "imgs/events/event1/DSC_3136.JPG",
+        "imgs/events/event1/DSC_3126.JPG",
+        "imgs/events/event1/DSC_3132.JPG",
+        "imgs/events/event1/DSC_3131.JPG",
+        "imgs/events/event1/DSC_3125.JPG",
+        "imgs/events/event1/DSC_3119.JPG",
+        "imgs/events/event1/DSC_3118.JPG"
+        ],
+        event2: [
+            "imgs/events/69e15963-e268-41b8-b052-4c80fba0c6cd.jpg",
+        ],
+        event3: [
+            "imgs/events/event3/DSC_7822_VV.jpg",
+        "imgs/events/event3/DSC_7754_VV.jpg",
+        "imgs/events/event3/DSC_7841_VV.jpg",
+        "imgs/events/event3/DSC_7762_VV.jpg",
+        "imgs/events/event3/DSC_7806_VV.jpg",
+        "imgs/events/event3/DSC_7791_VV.jpg",
+        "imgs/events/event3/DSC_7781_VV.jpg",
+        "imgs/events/event3/DSC_7843_VV.jpg",
+        "imgs/events/event3/DSC_7851_VV.jpg",
+        "imgs/events/event3/DSC_7875_VV.jpg",
+        "imgs/events/event3/DSC_7816_VV.jpg",
+        "imgs/events/event3/DSC_7789_VV.jpg",
+        "imgs/events/event3/DSC_7797_VV.jpg",
+        "imgs/events/event3/DSC_7871_VV.jpg",
+        "imgs/events/event3/DSC_7812_VV.jpg",
+        "imgs/events/event3/DSC_7800_VV.jpg",
+        "imgs/events/event3/DSC_7828_VV.jpg",
+        "imgs/events/event3/DSC_7847_VV.jpg",
+        "imgs/events/event3/DSC_7824_VV.jpg",
+        "imgs/events/event3/DSC_7859_VV.jpg",
+        "imgs/events/event3/DSC_7826_VV.jpg",
+        "imgs/events/event3/DSC_7790_VV.jpg",
+        "imgs/events/event3/DSC_7868_VV.jpg",
+        "imgs/events/event3/DSC_7864_VV.jpg",
+        "imgs/events/event3/DSC_7807_VV.jpg",
+        "imgs/events/event3/DSC_7852_VV.jpg",
+        "imgs/events/event3/DSC_7759_VV.jpg",
+        "imgs/events/event3/DSC_7840_VV.jpg",
+        "imgs/events/event3/DSC_7866_VV.jpg",
+        "imgs/events/event3/DSC_7817_VV.jpg",
+        "imgs/events/event3/DSC_7809_VV.jpg",
+        "imgs/events/event3/DSC_7874_VV.jpg",
+        "imgs/events/event3/DSC_7821_VV.jpg",
+        "imgs/events/event3/DSC_7757_VV.jpg",
+        "imgs/events/event3/DSC_7792_VV.jpg",
+        "imgs/events/event3/DSC_7829_VV.jpg",
+        "imgs/events/event3/DSC_7765_VV.jpg",
+        "imgs/events/event3/DSC_7769_VV.jpg",
+        "imgs/events/event3/DSC_7862_VV.jpg",
+        "imgs/events/event3/DSC_7784_VV.jpg",
+        "imgs/events/event3/DSC_7796_VV.jpg",
+        "imgs/events/event3/DSC_7798_VV.jpg",
+        "imgs/events/event3/DSC_7786_VV.jpg",
+        "imgs/events/event3/DSC_7775_VV.jpg",
+        "imgs/events/event3/DSC_7803_VV.jpg",
+        "imgs/events/event3/DSC_7811_VV.jpg"
+        ]
+    };
+
+    let currentImages = [];
+    let currentIndex = 0;
+
+    document.querySelectorAll('.cta-button').forEach((button) => {
+        button.addEventListener('click', () => {
+            const eventId = button.id; // Get button ID (e.g., event3, event4)
+            currentImages = imageSets[eventId] || [];
+            currentIndex = 0;
+
+            if (currentImages.length > 0) {
+                modalImage.src = currentImages[currentIndex];
+                modal.style.display = "block";
+            }
+        });
+    });
+
+    // Close Modal
+    closeModal.onclick = () => {
+        modal.style.display = "none";
+    };
+
+    window.onclick = (e) => {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+
+    // Navigation
+    prevImage.onclick = () => {
+        currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+        modalImage.src = currentImages[currentIndex];
+    };
+
+    nextImage.onclick = () => {
+        currentIndex = (currentIndex + 1) % currentImages.length;
+        modalImage.src = currentImages[currentIndex];
+    };
+</script>
 
 
 </body>
