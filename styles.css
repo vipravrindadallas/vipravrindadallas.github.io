@@ -401,7 +401,7 @@ footer p {
     line-height: 1.6;
 }
 
-.charter-section {
+.piller-section {
     padding: 40px 20px;
     background-color: #fff;
     color: #333;
@@ -409,12 +409,12 @@ footer p {
     border-bottom: 2px solid #ddd;
 }
 
-.charter-section .container {
+.piller-section .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.charter-section h2 {
+.piller-section h2 {
     font-size: 32px;
     color: #ff6600;
     margin-bottom: 20px;
