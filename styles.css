@@ -30,7 +30,7 @@ body {
 }
 
 .header .logo-image {
-    width: 120px;
+    width: 160px;
     /* Adjust the size as needed */
     height: auto;
 }
@@ -339,8 +339,9 @@ footer p {
 
 .mission-vision .mission,
 .mission-vision .vision {
+    text-align: center;
     flex: 1;
-    max-width: 500px;
+    max-width: 800px;
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -410,7 +411,7 @@ footer p {
 }
 
 .piller-section .container {
-    max-width: 1200px;
+    max-width: 6000px;
     margin: 0 auto;
 }
 
