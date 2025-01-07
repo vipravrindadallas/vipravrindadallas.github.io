@@ -370,7 +370,7 @@ footer p {
 }
 
 .goals-grid {
-    display: grid;
+    display: inline-flex;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
@@ -383,6 +383,7 @@ footer p {
     text-align: left;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 250px;
 }
 
 .goal:hover {
