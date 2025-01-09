@@ -252,8 +252,20 @@
         <div class="modal-content">
             <img id="modalImage" src="" alt="Event Image">
             <div class="modal-navigation">
-                <button id="prevImage" class="nav-button">&lt;</button>
-                <button id="nextImage" class="nav-button">&gt;</button>
+                <button id="prevImage" class="nav-button" aria-label="Left Modal" style="background-color: transparent;
+                color: #fff;
+                font-size: 24px;
+                border: none;
+                cursor: pointer;
+                z-index: 1001;
+                transition: color 0.3s;"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                <button id="nextImage" class="nav-button" aria-label="Right Modal" style="background-color: transparent;
+                color: #fff;
+                font-size: 24px;
+                border: none;
+                cursor: pointer;
+                z-index: 1001;
+                transition: color 0.3s;"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
             </div>
         </div>
     </div>
