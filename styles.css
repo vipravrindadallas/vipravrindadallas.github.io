@@ -164,6 +164,17 @@ html {
     transition: background-color 0.3s;
 }
 
+.cta-button-inactive {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #565656;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
 .cta-button:hover {
     background-color: #e65c00;
 }
@@ -498,6 +509,12 @@ footer p {
 .event-image {
     width: 100%;
     height: 200px;
+    object-fit: cover;
+}
+
+.upcoming-event-image {
+    width: 100%;
+    height: 500px;
     object-fit: cover;
 }
 
